@@ -1,0 +1,145 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.bg-nav{
+    background-color: #083948 ;
+}
+
+nav div .title{
+    text-decoration: underline;
+}
+
+
+
+.sign{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.sign a{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F73859;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: #083948;
+    padding: 5px 20px 7px 20px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.sign a:hover{
+    background-color: aqua;
+}
+
+.bg{
+    height: 100vh;
+    background-color: #C4EDDE;
+}
+.bg2{
+    position: relative;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* .bg{
+    width: 100%;
+    
+} */
+
+
+
+.text1{
+    margin-top: 30px;
+}
+
+.custom-shape-divider-top-1627739379 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1627739379 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+
+.custom-shape-divider-top-1627739379 .shape-fill {
+    fill: #C4EDDE;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1627739379 svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+}
+
+.mt-6{
+    margin-top: 150px;
+    text-align: end;
+}
+
+.gambar img{
+    margin-left: 70px;
+    max-width: 60%;
+    height: auto;
+}
+
+.gambar2 img{
+    max-width: 40%;
+    margin-top: 50px;
+}
+
+.konten1{
+    padding-top: 7rem !important;
+}
+
+/* @media only screen and (min-width: 576px) {
+    .gambar img{
+        margin-left: 0;
+        max-width: 50%;
+        height: auto;
+    }
+}  */
+@media only screen and (max-width: 576px) {
+    .gambar img{
+        margin-left: 0;
+        max-width: 60%;
+        height: auto;
+    }
+    .gambar2 img{
+        max-width: 90%;
+    }
+    .konten1{
+        padding-top: 4rem !important;
+    }
+} 
+@media only screen and (max-width: 992px) {
+    .gambar img{
+        margin-left: 0;
+        max-width: 60%;
+        height: auto;
+    }
+} 
+
+@media only screen and (max-width: 1080px) {
+    .konten1{
+        padding-top: 5rem !important;
+    }
+} 
+

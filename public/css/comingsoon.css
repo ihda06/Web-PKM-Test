@@ -1,0 +1,19 @@
+.background{
+    height: 91.3vh;
+    background: #E0ECE4;
+}
+
+.custom{
+    padding-top: 120px;
+}
+
+.custom img{
+    max-width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .custom img{
+        max-width: 65%;
+    }
+}
