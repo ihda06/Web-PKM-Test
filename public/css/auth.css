@@ -1,4 +1,5 @@
 
+
 .col2{
     background-color: white;
     border-radius: 0px 40px 40px 0px;
@@ -23,9 +24,10 @@
 i{
     cursor: pointer;
 }
-
+html,
 body{
     background-color: #C4EDDE;
+    height: 100%;
 }
 
 .row{
@@ -66,4 +68,12 @@ p:hover{
 
 .bi-check-square-fill{
     color: #4BB543;
+}
+
+section{
+    height: 100%;
+}
+
+.box-form{
+    height: 580px;
 }

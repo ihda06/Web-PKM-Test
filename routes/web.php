@@ -4,7 +4,7 @@ use App\Models\Tim;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\SigninController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ComblanginController;
 
@@ -45,8 +45,10 @@ Route::get('/comingsoon', function () {
 Route::get('/blog/{post:slug}', [PostController::class, 'show']);
 
 //auth
-Route::get('/signin', [SigninController::class, 'index']);
-Route::post('/signin', [SigninController::class, 'store']);
-
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store']);
+Route::middleware('guest')->group(function(){
+    Route::get('/login', [LoginController::class, 'index']);
+    Route::post('/login', [LoginController::class, 'store']);
+    
+    Route::get('/register', [RegisterController::class, 'index']);
+    Route::post('/register', [RegisterController::class, 'store']);
+});

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <section class="py-4">
+  <section class="d-flex align-items-center">
     <div class="container pt-2">
       <div class="row g-0 mx-4 mx-lg-0 ">
         <div class="col-lg-7 d-none d-lg-flex justify-content-center d-md-none col3">
@@ -91,7 +91,7 @@
                 <button class="btn btn-secondary">Daftar</button>
               </div>
             </form>
-            <a href="/signin" class="text-decoration-none text-reset">
+            <a href="/login" class="text-decoration-none text-reset">
               <p class="text-center">
                 Sudah memiliki akun?
               </p>

@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class SigninController extends Controller
+class LoginController extends Controller
 {
     public function index(){
-        return view('auth.signin');
+        return view('auth.login');
     }
 
     public function store(Request $request){

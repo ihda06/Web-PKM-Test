@@ -33,7 +33,7 @@
   </div>
 @endif
   <!-- main -->
-  <section class="py-5">
+  <section class="d-flex align-items-center">
     <div class="container">
       <div class="row g-0 mx-4 mx-lg-0 ">
         <div class="col-lg-5">
@@ -44,7 +44,7 @@
             <h1 class="text-center text-white py-4">Masuk</h1>
 
             <!-- Form -->
-            <form action="/signin" class="text-white py-1" method="POST">
+            <form action="/login" class="text-white py-1" method="POST">
             @csrf
               <div class="mb-3">
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput" placeholder="Ketik Email" value="{{old('email')}}">
@@ -83,8 +83,9 @@
         </div>
       </div>
     </div>
-
   </section>
+
+  
   <!-- Optional JavaScript; choose one of the two! -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script>
