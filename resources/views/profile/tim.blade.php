@@ -24,14 +24,20 @@
                     </div>
                     <div class="col bg-white shadow-sm rounded-3">
                         <div class="list-group list-group-flush">
-                            <a href="/profile" class="list-group-item list-group-item-action">Profile</a>
-                            <a href="/tim" class="list-group-item list-group-item-action">Tim</a>
+                            <a href="#" class="list-group-item list-group-item-action">Profile</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tim</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 bg-white shadow-sm rounded-3">
-                <h2 class="py-4 border-bottom">Edit Profile</h2>
+                <h2 class="py-4 border-bottom">Info Tim</h2>
+                @if(Auth::user()->role == 0)
+                <div class="container pb-5 pt-3">
+                    <h1>Belum memiliki tim</h1>
+                    <a href="" class="btn btn-outline-primary">Buat Tim</a>
+                </div>
+                @else
                 <div class="container pb-5 pt-3">
                     <form>
                         @csrf
@@ -62,6 +68,7 @@
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </form>
                 </div>
+                @endif
             </div>
         </div>
     </div>

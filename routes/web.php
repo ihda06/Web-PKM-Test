@@ -50,6 +50,7 @@ Route::get('/blog/{post:slug}', [PostController::class, 'show']);
 Route::middleware('auth')->group(function(){
     Route::post('/logout', LogoutController::class);
     Route::get('/profile', [ProfileController::class, 'index']);
+    Route::get('/tim', [ProfileController::class, 'tim']);
 });
 
 //auth

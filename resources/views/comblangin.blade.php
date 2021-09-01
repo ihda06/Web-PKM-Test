@@ -27,6 +27,7 @@
                     <h5 class="card-title">{{$tim["Judul"]}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{$tim["Ketua"]}}</h6>
                     <p class="card-text">{{$tim["Keterangan"]}}</p>
+                    <p class="card-text"><span class="badge rounded-pill bg-warning text-dark">-3 Orang</span></p>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-kontak="{{$tim['Kontak']}}" data-bs-judul="{{$tim['Judul']}}" data-bs-ketua="{{$tim['Ketua']}}">
                         Kontak
                     </button>

@@ -14,4 +14,21 @@ class ProfileController extends Controller
         ]);
     }
 
+    public function tim()
+    {
+        return view('profile.tim', [
+            "title" => Auth::user()->name,
+        ]);
+        // if(Auth::user()->role == 0){
+        //     return view('profile.notim', [
+        //         "title" => Auth::user()->name,
+        //     ]);
+        // }
+        // else{
+        //     return view('profile.tim', [
+        //         "title" => Auth::user()->name,
+        //     ]);
+        // }
+    }
+
 }
