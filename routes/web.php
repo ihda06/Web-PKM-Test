@@ -7,6 +7,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ComblanginController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +45,12 @@ Route::get('/comingsoon', function () {
 
 //single post
 Route::get('/blog/{post:slug}', [PostController::class, 'show']);
+
+//logout
+Route::middleware('auth')->group(function(){
+    Route::post('/logout', LogoutController::class);
+    Route::get('/profile', [ProfileController::class, 'index']);
+});
 
 //auth
 Route::middleware('guest')->group(function(){

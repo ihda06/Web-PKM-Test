@@ -37,21 +37,28 @@
                 </ul>
                 <ul class="navbar-nav">
                     @guest
-                        <li class="me-2">
-                            <a href="/login" class="sign">Masuk</a>
-                        </li>
-                        <li>
-                            <a href="/register" class="sign">Daftar</a>
-                        </li>
+                    <li class="me-2">
+                        <a href="/login" class="sign">Masuk</a>
+                    </li>
+                    <li>
+                        <a href="/register" class="sign">Daftar</a>
+                    </li>
                     @else
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-end" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <form action="/logout" method="post">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </li>
                         </ul>
                     </li>
                     @endguest

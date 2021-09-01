@@ -1,0 +1,25 @@
+section{
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+html, 
+body{
+    height: 100%;
+}
+
+.img-profile img{
+    max-height: 76px;
+    width: auto;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background-color: rgb(223, 223, 223);
+}
