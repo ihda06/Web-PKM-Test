@@ -1,0 +1,17 @@
+html,body{
+    background-color: whitesmoke  !important;
+}
+
+.card-subtitle p{
+    margin: 0;
+}
+
+.bi-telephone-plus-fill{
+    font-size: 40px;
+}
+
+@media (max-width: 992px) {
+    .bi-telephone-plus-fill{
+    font-size: 30px;
+}
+ }

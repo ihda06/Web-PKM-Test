@@ -31,6 +31,22 @@
       </div>
     </div>
   </div>
+@elseif( session()->has('daftartim') )
+  <!-- Toast -->
+  <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+    <div class="toast-container position-absolute top-0 start-50 translate-middle-x p-3" id="toastPlacement">
+      <div class="toast">
+        <div class="toast-header">
+        <i class="bi bi-exclamation-circle-fill px-1"></i>
+          <strong class="me-auto">Harus punya akun</strong>
+
+        </div>
+        <div class="toast-body">
+          Silahkan Login
+        </div>
+      </div>
+    </div>
+  </div>
 @endif
   <!-- main -->
   <section class="d-flex align-items-center">
@@ -92,6 +108,7 @@
     $(function() {
       $(".toast").toast({
         delay: 3000
+        
       });
       $(".toast").toast("show");
     })

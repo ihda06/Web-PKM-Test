@@ -13,4 +13,14 @@ class ComblanginController extends Controller
             "tims" => \App\Models\Tim::all()
         ]);
     }
+
+    public function daftar(){
+        session()->flash('daftartim');
+        return redirect('/login');
+    }
+
+    public function register()
+    {
+        return view('comblangin.register');
+    }
 }

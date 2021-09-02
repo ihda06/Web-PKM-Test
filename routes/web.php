@@ -51,6 +51,7 @@ Route::middleware('auth')->group(function(){
     Route::post('/logout', LogoutController::class);
     Route::get('/profile', [ProfileController::class, 'index']);
     Route::get('/tim', [ProfileController::class, 'tim']);
+    Route::get('/daftar', [ComblanginController::class, 'register']);
 });
 
 //auth
@@ -60,4 +61,6 @@ Route::middleware('guest')->group(function(){
     
     Route::get('/register', [RegisterController::class, 'index']);
     Route::post('/register', [RegisterController::class, 'store']);
+
+    Route::get('/daftar', [ComblanginController::class, 'daftar']);
 });

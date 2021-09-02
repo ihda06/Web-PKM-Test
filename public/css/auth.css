@@ -77,3 +77,7 @@ section{
 .box-form{
     height: 580px;
 }
+
+.bi-exclamation-circle-fill{
+    color: #DC3545;
+}
